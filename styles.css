@@ -130,14 +130,29 @@ body{
     border: 2px solid #f8c200;
 }
 .brands{
-    padding: 50px;
+    padding: 150px 0;
     text-align: center;
     background: rgb(189, 184, 184);
+    background-image: url(images/benss.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(226, 173, 94);
+    
+    
+    
+
 }
 .brands h2{
     font-size: 35px;
     margin-bottom: 40px;
-    color: #882121;
+    color: #830707;
+}
+.brands p{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    /* color: #9a8e8e; */
 }
 .brand-cards{
     display: flex;
