@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Car Details - CarWorld</title>
+
+  <!-- AOS + Swiper CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="details.css" />
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <a class="logo" href="index.html">Car<span>World</span></a>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <ul class="nav-link">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#featured">Featured Cars</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="booking.html">Booking</a></li>
+      <li><a href="index.html#contact">Contact Us</a></li>
+    </ul>
+
+    <button class="nav-btn">Explore Cars</button>
+  </nav>
+
+
+  <header class="details-header">
+    <a href="index.html" class="back-btn">← Back to Home</a>
+    <h1 data-aos="fade-down">Car Details</h1>
+  </header>
+
+  <main class="details-container" data-aos="fade-up">
+
+    <!-- Swiper for multiple images -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper" id="car-images">
+        <!-- JS will inject images here -->
+      </div>
+
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+    <div class="car-info" data-aos="fade-up" data-aos-delay="300">
+      <h2 id="car-name"></h2>
+      <p id="car-price"></p>
+      <p id="car-description"></p>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="details.js"></script>
+
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+</body>
+
+</html>
