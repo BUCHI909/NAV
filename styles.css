@@ -131,7 +131,7 @@ body {
 /* ------------------ HERO SECTION ------------------ */
 .hero {
   height: 100vh;
-  background: url('images/pexels-mikebirdy-120049.jpg') center/cover no-repeat;
+  background: url('images/cars.avif') center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -187,6 +187,11 @@ body {
 .brands {
   padding: 100px 50px;
   text-align: center;
+  background-image: url(images/benss.jpg) ;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
 }
 
 .brands h2 {
